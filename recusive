@@ -1,0 +1,32 @@
+import java.util.Scanner;
+class RecursiveMultiply 
+{
+	public static double multiply(double x, double y)
+	{
+		if(x==0||y==0)
+		{
+			return 0;
+		}
+		else if(y>0)
+		{
+			return x + multiply(x,y-1);
+		}
+		else if(y<0)
+		{
+			return -multiply(x,-y);
+		}
+		else
+		{
+			return -1;
+		}
+	}
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter first num ");
+		double num=sc.nextDouble();
+		System.out.println("enter second num ");
+		double num2=sc.nextDouble();
+		System.out.println(multiply(num,num2));
+	}
+}
