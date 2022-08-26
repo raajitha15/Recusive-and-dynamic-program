@@ -1,0 +1,13 @@
+import java.io.*;
+import java.util.*;
+public class Demo {
+   public static void main (String args[]) {
+      Stack<String> stack = new Stack<String>();
+      stack.push("disk1");
+      stack.push("disk2");
+      stack.push("disk3");
+      stack.push("disk4");
+      stack.push("disk5");
+      System.out.println("The stack elements are: " + stack);
+   }
+}
